@@ -1,6 +1,6 @@
 # RayCasterEngine
 
-A lightweight C++ 2.5D raycasting demo built with SDL2 and SDL2_image. Walk through textured floors, ceilings, and walls in a simple Doom-style world—complete with a mini-map, FPS counter, and basic lighting.
+A 2.5D raycasting engine built completely from scratch in C++ using trigonometry (sine, cosine, projection math), SDL2, and SDL2_image. Walk through textured floors, ceilings, and walls in a simple Doom-style world—complete with a mini-map, FPS counter, and basic lighting.
 
 <p align="center">
   <img width="1277" alt="Screenshot 2025-05-13 at 8 28 19 PM" src="https://github.com/user-attachments/assets/da81b0b0-e48a-45ac-8edf-17c9018dd6fe" />
