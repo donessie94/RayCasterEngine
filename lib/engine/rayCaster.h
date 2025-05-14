@@ -8,7 +8,7 @@
 #ifndef rayCaster_hpp
 #define rayCaster_hpp
 
-#include <SDL2/SDL.h>
+#include <SDL.h>
 #include "../player/player.h"
 #include "../map/miniMap.h"
 #include "../world/walls.h"

@@ -6,7 +6,7 @@
 //
 
 #include "miniMap.h"
-#include <SDL2/SDL.h>
+#include <SDL.h>
                                                                     //1536
 MiniMap::MiniMap(SDL_Renderer* renderer, float pX, float pY) : sizeX{192}, sizeY{192}
 {

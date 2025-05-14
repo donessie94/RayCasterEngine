@@ -6,7 +6,7 @@
 //
 
 #include "rayCaster.h"
-#include <SDL2/SDL_image.h>
+#include <SDL_image.h>
 
 //engine construct to createb the window and the renderer of ur engine
 RayCaster::RayCaster()
@@ -291,7 +291,7 @@ void RayCaster::loadImages()
 {
     if(wallImage[0]==NULL)
     {
-        const char *image_path ="../../textures/default_acacia_wood.png";
+        const char *image_path ="textures/default_acacia_wood.png";
         wallImage[0] = IMG_Load(image_path);
 
         //NOTE WE NEED TO FIGURE OUT HOW TO MAKE I SO IT CAN READ PICTURES OTHER THANIN THE "PWD"
@@ -305,7 +305,7 @@ void RayCaster::loadImages()
 
     if(wallImage[1]==NULL)
     {
-        const char *image_path ="../../textures/bricksx64.png";
+        const char *image_path ="textures/bricksx64.png";
         wallImage[1] = IMG_Load(image_path);
 
         //NOTE WE NEED TO FIGURE OUT HOW TO MAKE I SO IT CAN READ PICTURES OTHER THANIN THE "PWD"
@@ -319,7 +319,7 @@ void RayCaster::loadImages()
 
     if(wallImage[2]==NULL)
     {
-        const char *image_path ="../../textures/default_aspen_wood.png";
+        const char *image_path ="textures/default_aspen_wood.png";
         wallImage[2] = IMG_Load(image_path);
 
         //NOTE WE NEED TO FIGURE OUT HOW TO MAKE I SO IT CAN READ PICTURES OTHER THANIN THE "PWD"
@@ -333,7 +333,7 @@ void RayCaster::loadImages()
 
     if(wallImage[3]==NULL)
     {
-        const char *image_path ="../../textures/default_furnace_front.png";
+        const char *image_path ="textures/default_furnace_front.png";
         wallImage[3] = IMG_Load(image_path);
 
         //NOTE WE NEED TO FIGURE OUT HOW TO MAKE I SO IT CAN READ PICTURES OTHER THANIN THE "PWD"
@@ -347,7 +347,7 @@ void RayCaster::loadImages()
 
     if(wallImage[4]==NULL)
     {
-        const char *image_path ="../../textures/default_bookshelf.png";
+        const char *image_path ="textures/default_bookshelf.png";
         wallImage[4] = IMG_Load(image_path);
 
         //NOTE WE NEED TO FIGURE OUT HOW TO MAKE I SO IT CAN READ PICTURES OTHER THANIN THE "PWD"
@@ -361,7 +361,7 @@ void RayCaster::loadImages()
 
     if(wallImage[5]==NULL)
     {
-        const char *image_path ="../../textures/doors_door_wood.png";
+        const char *image_path ="textures/doors_door_wood.png";
         wallImage[5] = IMG_Load(image_path);
 
         //NOTE WE NEED TO FIGURE OUT HOW TO MAKE I SO IT CAN READ PICTURES OTHER THANIN THE "PWD"
@@ -376,7 +376,7 @@ void RayCaster::loadImages()
     //*
     if(floorTexture[0]==NULL)
     {
-        const char *floorTexture_path ="../../textures/default_stone_block.png";
+        const char *floorTexture_path ="textures/default_stone_block.png";
         floorTexture[0] = IMG_Load(floorTexture_path);
 
         //NOTE WE NEED TO FIGURE OUT HOW TO MAKE I SO IT CAN READ PICTURES OTHER THANIN THE "PWD"
@@ -389,7 +389,7 @@ void RayCaster::loadImages()
 
     if(floorTexture[1]==NULL)
     {
-        const char *floorTexture_path ="../../textures/default_rainforest_litter.png";
+        const char *floorTexture_path ="textures/default_rainforest_litter.png";
         floorTexture[1] = IMG_Load(floorTexture_path);
 
         //NOTE WE NEED TO FIGURE OUT HOW TO MAKE I SO IT CAN READ PICTURES OTHER THANIN THE "PWD"
@@ -402,7 +402,7 @@ void RayCaster::loadImages()
 
     if(floorTexture[2]==NULL)
     {
-        const char *floorTexture_path ="../../textures/default_river_water.png";
+        const char *floorTexture_path ="textures/default_river_water.png";
         floorTexture[2] = IMG_Load(floorTexture_path);
 
         //NOTE WE NEED TO FIGURE OUT HOW TO MAKE I SO IT CAN READ PICTURES OTHER THANIN THE "PWD"
@@ -415,7 +415,7 @@ void RayCaster::loadImages()
 
     if(floorTexture[3]==NULL)
     {
-        const char *floorTexture_path ="../../textures/default_rainforest_litter.png";
+        const char *floorTexture_path ="textures/default_rainforest_litter.png";
         floorTexture[3] = IMG_Load(floorTexture_path);
 
         //NOTE WE NEED TO FIGURE OUT HOW TO MAKE I SO IT CAN READ PICTURES OTHER THANIN THE "PWD"
@@ -429,7 +429,7 @@ void RayCaster::loadImages()
     //*
     if(ceilingTexture[0]==NULL)
     {
-        const char *ceiling_path ="../../textures/default_acacia_wood.png";
+        const char *ceiling_path ="textures/default_acacia_wood.png";
         ceilingTexture[0] = IMG_Load(ceiling_path);
 
         //NOTE WE NEED TO FIGURE OUT HOW TO MAKE I SO IT CAN READ PICTURES OTHER THANIN THE "PWD"
@@ -442,7 +442,7 @@ void RayCaster::loadImages()
 
     if(ceilingTexture[1]==NULL)
     {
-        const char *ceiling_path ="../../textures/default_aspen_leaves.png";
+        const char *ceiling_path ="textures/default_aspen_leaves.png";
         ceilingTexture[1] = IMG_Load(ceiling_path);
 
         //NOTE WE NEED TO FIGURE OUT HOW TO MAKE I SO IT CAN READ PICTURES OTHER THANIN THE "PWD"
@@ -455,7 +455,7 @@ void RayCaster::loadImages()
 
     if(ceilingTexture[2]==NULL)
     {
-        const char *ceiling_path ="../../textures/skyBackground.png";
+        const char *ceiling_path ="textures/skyBackground.png";
         ceilingTexture[2] = IMG_Load(ceiling_path);
 
         //NOTE WE NEED TO FIGURE OUT HOW TO MAKE I SO IT CAN READ PICTURES OTHER THANIN THE "PWD"
@@ -468,7 +468,7 @@ void RayCaster::loadImages()
 
     if(ceilingTexture[3]==NULL)
     {
-        const char *ceiling_path ="../../textures/skyBackground.png";
+        const char *ceiling_path ="textures/skyBackground.png";
         ceilingTexture[3] = IMG_Load(ceiling_path);
 
         //NOTE WE NEED TO FIGURE OUT HOW TO MAKE I SO IT CAN READ PICTURES OTHER THANIN THE "PWD"
@@ -481,7 +481,7 @@ void RayCaster::loadImages()
 
     if(spritePlayer==NULL)
     {
-        const char *playerImg ="../../textures/basic female charcter template.png";
+        const char *playerImg ="textures/basic female charcter template.png";
         spritePlayer = IMG_Load(playerImg);
 
         //NOTE WE NEED TO FIGURE OUT HOW TO MAKE I SO IT CAN READ PICTURES OTHER THANIN THE "PWD"

@@ -8,8 +8,8 @@
 #ifndef floor_hpp
 #define floor_hpp
 
-#include "settings.h"
-#include <SDL2/SDL.h>
+#include "../engine/settings.h"
+#include <SDL.h>
 
 class Floor
 {
@@ -76,12 +76,12 @@ public:
     //                 Player--------------
     //
     // Once we got point P this is the point in the mapped texture wee need to draw!
-    
+
     Floor() : straightDistance(0.0), realDistance(0.0f),
     textureSize(128) {textureSizeHalf=textureSize/2;}
-    
+
     void draw(float, float, float, float, float, float, float, SDL_Surface**, int, int, void*, int, float);
-    
+
     float straightDistance;
     float realDistance;
     uint16_t textureSize;

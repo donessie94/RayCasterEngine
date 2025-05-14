@@ -13,7 +13,7 @@
 #define walls_hpp
 
 #include "../engine/settings.h"
-#include <SDL2/SDL.h>
+#include <SDL.h>
 
 class Wall
 {

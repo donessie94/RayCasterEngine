@@ -9,15 +9,15 @@
 #define ceiling_hpp
 
 #include "../engine/settings.h"
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_image.h>
+#include <SDL.h>
+#include <SDL_image.h>
 
 class Ceiling
 {
 public:
     Ceiling() : straightDistance(0.0), realDistance(0.0f)
     {
-        const char *ceiling_path ="../../textures/textures/skyBackground.png";
+        const char *ceiling_path ="textures/skyBackground.png";
         background = IMG_Load(ceiling_path);
 
         if (!background) { //ASLO NOTICE WE ONLY CAN WORK IF THE TEXTURE IS LOADED AFTER THE LOCKTEXTURE COMMAND ELSE WE GOT AN ERROR
